@@ -1,0 +1,191 @@
+
+/* Used colors
+**************/
+.red {
+    color: #dd2e44;
+}
+
+/* Main
+*********/
+#app {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.welcome-msg {
+    color: whitesmoke;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 800;
+
+}
+
+.main-p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.home {
+    color: whitesmoke;
+    padding-top: 1em;
+    display: block;
+    position: relative;
+    height: 20vh;
+    min-height: 140px;
+}
+/* Logo
+**************/
+#logo {
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.name {
+    font-family: 'Jaldi', sans-serif;
+    font-weight: 700;
+    padding: 0;
+    margin-top: -5px;
+    color: whitesmoke;
+}
+
+/* Nav Bar and links
+*********************/
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#top-nav a {
+    color: #fff;
+}
+
+li:first-of-type {
+    margin-left: 0px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.main-menu {
+    padding-top: 18px;
+}
+
+#links a {
+    color: #dd2e44;
+}
+
+.fixedd {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+/* Document parts
+****************/
+
+#top-part {
+    background: linear-gradient(rgba(36, 49, 71, 0.8), rgba(13, 20, 32, 0.5)),
+        url('../img/bg.jpeg') no-repeat fixed;
+
+    background: -webkit-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+        url('../img/bg.jpeg') no-repeat fixed;
+
+    /* background: -moz-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+        url('../img/bg.jpeg') no-repeat fixed; */
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+.col {
+    margin-top: 50px;
+}
+
+.col h3 {
+    margin-top: 20px;
+}
+.col img {
+    margin-left: 90px;
+}
+ul {
+    -webkit-padding-start: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-start: 0;
+    padding-left: 0;
+
+}
+.used li {
+    color: wheat;
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);
+    line-height: 32px;
+    display: inline;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #dd2e44;
+    padding: 5px 10px;
+}
+
+h3 a {
+    color: black;
+}
+
+h3 a:hover {
+    color: #dd2e44;
+}
+h3 a {
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.details {
+    line-height: 26px;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(103, 117, 129);;
+}
+.row img {
+    margin-right: 35px;
+}
+
+@media screen and (max-width: 500px) {
+    .welcome-msg {
+        font-size: 25px;
+    }
+    /* .main-p {
+        font-size: 12px;
+    } */
+
+    .home {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #top-nav a {
+        margin-left: -3px;
+        padding-left: 0;
+        /* font-weight: 800; */
+        font-size: 12px;
+    }
+
+    .home {
+        height: 40vh;
+    }
+}
