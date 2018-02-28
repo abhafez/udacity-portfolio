@@ -1,8 +1,50 @@
+/* color pallette
+color: #dd2e44;
+*/
+/* global style
+***************/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
-/* Used colors
-**************/
-.red {
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    -webkit-padding-start: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-start: 0;
+    padding-left: 0;
+
+}
+
+li:first-of-type {
+    margin-left: 0px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+h3 a {
+    color: black;
+}
+
+h3 a:hover {
     color: #dd2e44;
+}
+
+h3 a {
+    text-decoration: none;
+    transition: color .2s;
 }
 
 /* Main
@@ -37,6 +79,7 @@
     height: 20vh;
     min-height: 140px;
 }
+
 /* Logo
 **************/
 #logo {
@@ -44,7 +87,11 @@
     padding-top: 2rem;
 }
 
-.name {
+.logo {
+    width: 4rem;
+}
+
+.container .name {
     font-family: 'Jaldi', sans-serif;
     font-weight: 700;
     padding: 0;
@@ -54,26 +101,9 @@
 
 /* Nav Bar and links
 *********************/
-a:link {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 
 #top-nav a {
     color: #fff;
-}
-
-li:first-of-type {
-    margin-left: 0px;
-}
-
-li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 15px;
 }
 
 .main-menu {
@@ -91,18 +121,18 @@ li {
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
+
 /* Document parts
 ****************/
-
 #top-part {
     background: linear-gradient(rgba(36, 49, 71, 0.8), rgba(13, 20, 32, 0.5)),
         url('../img/bg.jpeg') no-repeat fixed;
 
-    background: -webkit-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+    background: -webkit-gradient(rgba(36, 49, 71, 0.8), rgba(3, 20, 32, 0.5)),
         url('../img/bg.jpeg') no-repeat fixed;
 
-    /* background: -moz-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
-        url('../img/bg.jpeg') no-repeat fixed; */
+    background: -moz-linear-gradient(rgba(36, 49, 71, 0.8), rgba(3, 20, 32, 0.5)),
+        url('../img/bg.jpeg') no-repeat fixed;
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
@@ -110,6 +140,10 @@ li {
 
 .row {
     margin-bottom: 50px;
+}
+
+.row img {
+    margin-right: 35px;
 }
 
 .col {
@@ -122,14 +156,7 @@ li {
 .col img {
     margin-left: 90px;
 }
-ul {
-    -webkit-padding-start: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-before: 0;
-    -webkit-margin-start: 0;
-    padding-left: 0;
 
-}
 .used li {
     color: wheat;
     text-shadow: 0 1px 0 rgba(0,0,0,.15);
@@ -141,18 +168,6 @@ ul {
     padding: 5px 10px;
 }
 
-h3 a {
-    color: black;
-}
-
-h3 a:hover {
-    color: #dd2e44;
-}
-h3 a {
-    text-decoration: none;
-    transition: color .2s;
-}
-
 .details {
     line-height: 26px;
     font-size: 14px;
@@ -160,10 +175,9 @@ h3 a {
     padding-bottom: 15px;
     color: rgb(103, 117, 129);;
 }
-.row img {
-    margin-right: 35px;
-}
 
+/* Responsive design is an art not a science
+*********************************************/
 @media screen and (max-width: 500px) {
     .welcome-msg {
         font-size: 25px;
